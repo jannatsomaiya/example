@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   
+    <title>Bootstrap 4 practice </title>
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+    
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       
+       <style type="text/css" media="all">
+          .body-carousel{
+           background-image: url(img/3.jpg);
+          
+         }
+       </style>
+  </head>
+  <body>
+ <div class="container mt-3">
+   
+   
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 "> popovers  </p></div>
+     
+     <div class="poppop">
+       <button class="btn btn-success"  type="submit" value="Show Us" data-toggle="popover" data-placement="right" title="my name is akramul." data-trigger="focus" >Show Us</button>
+       
+       
+       
+     </div>
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 "> tooltip  </p></div>
+     
+     <h4 data-toggle="tooltip" data-placement="top" class="" title="He is a student">My name is Akram.</h4>
+     
+     <p title="My name is akramul">
+       Do you know me?
+     </p>
+    <script>
+      $('[data-toggle="tooltip"]').tooltips();
+      $('[data-toggle="popover"]').popover();
+      
+    </script>
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 "> carousel slide </p></div>
+     
+     <div id="carosal" class="carousel slide" data-ride="carousel">
+       
+       <a class="carousel-control-prev" href="#carosal" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+       <div class="carousel-inner" role="list-box">
+         <div class="carousel-item active ">
+           <img class="d-block img-fluid" src="img/1.jpg" alt="no way" />
+           <h5 class="">Mohammad Akramul Islam</h5>
+           <a class="w-100 btn btn-warning btn-lg" href="#">Download</a>
+         </div>
+          <div class="carousel-item  ">
+           <img class="d-block img-fluid" src="img/2.jpg" alt="no way" />
+         </div>
+           <div class="carousel-item  ">
+           <img class="d-block img-fluid" src="img/4.jpg" alt="no way" />
+         </div>
+       </div>
+        <a class="carousel-control-next" href="#carosal" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+     </div>
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">flex </p></div>
+     <div class="d-flex flex-row ">
+       
+       <div class="order-3">
+          <h6 class="">div-1</h6>        
+         my name is my name is akram my name is akra y name is my name is my name is akram my name is akra y name is my name is my name is akram my name is akra y name is akramul.
+       </div>
+       <div class="">
+         <h6 class="">div-2</h6>
+         my name is my name is akram my name is akra y name is my name is my name is akram my name is akra y name is my name is my name is akram my name is akra y name is akramul.
+       </div>
+       <div class="order-1">
+          <h6 class="">div-3</h6>        
+         my name is my name is akram my name is akra y name is my name is my name is akram my name is akra y name is my name is my name is akram my name is akra y name is akramul.
+       </div>
+     </div>
+     
+     
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">dropdown bar </p></div>
+  <div class="dropdown">
+     <nav class="navigation ">
+       <ul class="nav">
+         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">address</a></li>
+         <li class="nav-item"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">contact</a></li>
+         
+       </ul>
+       
+
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">Mobile</li>
+          <li class="dropdown-item">Latter</li>
+          <li class="dropdown-item">Fax</li>
+        </ul>
+        
+      </div>
+     </nav>
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">List </p></div>
+     <ol class="list-unstyled list-inline">
+       <li class="list-inline-item">home</li>
+       <li class="list-inline-item">address</li>
+       <li class="list-inline-item">contact</li>
+     </ol>
+     <ul class="list-unstyled list-inline">
+       <li class="list-inline-item">home</li>
+       <li class="list-inline-item">address</li>
+       <li class="list-inline-item">conntact</li>
+     </ul>
+     <ul class="list-unstyled list-inline">
+       <li class="list-inline-item">home</li>
+       <li class="list-inline-item">address</li>
+       <li class="list-inline-item">contact</li>
+     </ul>
+     
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 "> Form </p></div>
+     <div class="form-make">
+       <form class="form" action="#" method="get">
+         
+         
+         <div class="form-group my-2">
+           <label for="First">First-name</label>
+           <input class="form-control" type="text" name="First-name" id="First" value="" placeholder="Enter your first name"/>
+         </div>
+         
+         <div class="form-group my-2">
+           <label for="Last">Last name</label>
+           <input class="form-control" type="text" name="Last" id="Last" value="" placeholder="Enter your last name"/>
+         </div>
+         
+          <div class="form-group my-2 was-validated">
+           <label for="emal">Email</label>
+           <input class="form-control" type="email" name="emal" id="emal" value="" placeholder="Enter your email " required/>
+           <div class="valid-feedback">valid</div>
+           <div class="invalid-feedback">
+             please enter valuable email id
+           </div>
+         </div>
+         
+          <div class="form-group my-2">
+           <label for="pass">Password</label>
+           <input class="form-control" type="password" name="pass" id="pass" value="" placeholder="Enter your password"/>
+         </div>    
+         
+         <div class="from-group my-2">
+           <label for="">Choose your color </label>
+           <input type="checkbox" name="check" id="check" /> red
+           <input type="checkbox" name="check" id="check" /> green
+           <input type="checkbox" name="check" id="check" /> yellow 
+         </div>
+         
+         <div class="form-group my-2">
+           <label for="radio">Choose your gander</label>
+           <input type="radio" name="sex" id="" value="" />male 
+           <input type="radio" name="sex" id="" value="" />famale 
+           <input type="radio" name="sex" id="" value="" />others 
+         </div>
+         
+         <div class="form-group my-2">
+           <label for="selet">select</label>
+           <select name="" id="selet" class="form-control">
+             <option>Slect your country name</option>
+             <option>Bamgladesh</option>
+             <option>England </option>
+             <option>Egypt</option>
+           </select>
+
+         </div>
+    
+
+         <div class="form-group my-2">
+           <input class=" btn btn-success form-control" type="button" name="byn" id="byn" value="Submit"/>
+         </div>
+         
+         <div class="form-group my-2">
+           <input class=" btn btn-success form-control" type="reset" name="byn" id="byn" value="reset"/>
+         </div>
+       </form>
+     </div>
+     
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 "> Table making </p></div>
+     <table class="table table-bordered table-light table-hover" border="0">
+        <thead>
+          <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>kicho</td>
+            <td>na</td>
+            <td>okey</td>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td>aka</td>
+            <td>5</td>
+            <td>djd</td>
+            <td>tai</td>
+            <td>aki</td>
+          </tr>
+           <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>age</td>
+            <td>age</td>
+            <td>age</td>
+          </tr>
+           <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>age</td>
+            <td>age</td>
+            <td>age</td>
+          </tr>    
+        </tbody>
+     </table>
+     
+     <table class="table table-bordered table-hover" border="0">
+       <thead>
+         <tr>
+           <td>name</td>
+           <td>age</td>
+           <td>course</td>
+          </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>akram</td>
+           <td>23</td>
+           <td>web</td>
+         </tr>
+                  <tr>
+           <td>akram</td>
+           <td>23</td>
+           <td>web</td>
+         </tr>
+                  <tr>
+           <td>akram</td>
+           <td>23</td>
+           <td>web</td>
+         </tr>
+       </tbody>
+     </table>
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 "> card </p></div>
+     <div class="media">
+
+       <div class="media-body">
+        <img class=" img-fluid " src="img/3.jpg" alt="logo" />        
+         Its Mohammad Akramul Islam. Now i my examination is going on.Its Mohammad Akramul Islam. Now i my examination is going on.
+       </div>
+     </div>
+     
+     
+    
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 "> card </p></div>
+     <div class="card">       
+       <div class="card-header">
+           Hello! Akram
+         </div>
+        <div class="card-body">
+          <img class="img-fluid card-img-top" src="img/2.jpg" alt="" />
+           Its Mohammad Akramul Islam. Now i my examination is going oIts Mohammad Akramul Islam. Now i my examination is going on. <a class="btn btn-outline-primary btn-lg d-block streched-link" href="#">See more details</a>
+       </div>
+       <div class="card-footer">
+         <cite>My name is Akramul Islam</cite>
+       </div>
+     </div>
+     
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 "> collapseble nav-bar </p></div>
+     <div class="navigation ">
+       
+       <nav class="navbar bg-dark navbar-dark">
+         <h4 class="navbar-brand text-uppercase ">Ekram</h4>
+         
+         <button class="navbar-toggler" data-toggle="collapse" data-target="#md" type="button">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         
+        <div id="md" class="collapse navbar-collapse ">
+          <ul class="navbar-nav">
+           <li class="nav-item"><a class="nav-link" href="#">Nithing</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Anything</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Something</a></li>
+         </ul>          
+        </div>
+
+       </nav>
+       
+       
+       <nav class="navbar">
+         
+         <h4 class="navbar-brand">M <span class="bg-warning text-white rounded p-1 ">A</span>I</h4>
+         
+         <button data-target="#id" class="navbar-toggler" data-toggle="collapse" type="button">
+           <span>
+             <li class="fas fa-bars text-info"></li>
+           </span>
+         </button>
+         
+         <div id="id" class="collapse navbar-collapse">
+           <ul class="navbar-nav text-center">
+           <li class="nav-item"><a class="nav-link" href="#">Ekram</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Jannat</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Somaiya</a></li>
+         </ul>
+         </div>
+
+       </nav>
+       
+       
+       
+       
+       
+       <nav class="navbar">
+        
+         <h4 class="text-primary navbar-brand ">EK <span class="text-danger bg-info rounded-circle p-2" style="latter-spacing:0;">R</span>AM</h4>
+         
+         <button data-target="#navi" style="color:black"  class="navbar-toggler" data-toggle="collapse" type="submit">
+           <span>
+            <i class="fas fa-bars text-dark"></i>
+          </span>
+         </button>
+         
+         <div id="navi" class="collapse navbar-collapse">
+           
+          <ul class="navbar-nav text-center">
+           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Address</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Tutorial</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+         </ul>
+         </div>
+         
+       </nav>
+     </div>
+     
+     
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">toggleble dynamic tabs </p></div>
+     
+     <div class="dymanib">
+       <ul class="nav nav-pills">
+         <li class="nav-item"><a class="nav-link" href="#boi" data-toggle="pill">Subject</a></li>
+         <li class="nav-item"><a class="nav-link" href="#intro" data-toggle="pill">instrument </a></li>
+         <li class="nav-item"><a class="nav-link" href="#khata" data-toggle="pill">paper</a></li>
+         <li class="nav-item"><a class="nav-link" href="#people" data-toggle="pill">employee </a></li>
+       </ul>
+       
+       <div class="tab-cantent">
+         <pre id="boi" class="tab-pane fade">
+           1/The Holy Quran 
+           2/The Hadith Sharif
+           3/The Ijmaye Olama
+           4/The thinks of Olama
+           5/The Al-Fiqah
+           6/The Durusol Balagah
+           7/ The Al-Mantic
+         </pre>
+         
+         <pre id="intro" class="tab-pane fade">
+           We have so many instruments in our shop. you can order now emedietly 
+           1/ The Mobile  Stan
+           2/ The Bag 
+           3/ The Ear Phone 
+           4/ The Mobile & Smart Phone
+           5/ The instruments of Computer  
+         </pre>
+         <p id="khata" class="tab-pane fade">
+           We have so many instruments in our shop. you can order now emedietly 
+         </p>
+         <p id="people" class="tab-pane fade">
+           We have so many instruments in our shop. you can order now emedietly 
+           We have so many instruments in our shop. you can order now emedietly 
+           1/ The Mobile  Stan
+           2/ The Bag 
+           3/ The Ear Phone 
+           4/ The Mobile & Smart Phone
+           5/ The instruments of Computer  
+         </p>
+         
+       </div>
+      </div>
+      
+     <div class="dynamic-tav">
+       
+       <ul class=" nav nav-tabs">
+         
+         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cards">About me</a></li>
+         
+         <li class="nav-item"><a class="nav-link" data-toggle="tab"  href="#thikana">Address</a></li>
+         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#kotha">Voice</a></li>
+      </ul>
+      
+     <div class="tab-content">
+       
+       <div id="cards" class="tab-pane fade card">
+         <div class="card-header">
+           Mohammad Akramul Islam
+         </div>
+         <div class="card-body">
+           Its Mohammad Akramul Islam. Now i my examination is going on
+         </div>
+         <div class="card-footer">
+           Will work in freelance market place. 
+           <cite>inshallah</cite>
+         </div>
+       </div>
+       
+         <pre id="thikana" class="tab-pane fade">
+           Village     :Moshkipur
+           Post-Office : Moheshpur(1360)
+           Upzilla     :Barura
+           Zila        :Cumilla
+        </pre>
+         <div id="kotha" class="tab-pane fade bg-info text-white text-justify text-center" style="width:50%">
+            Its Mohammad Akramul Islam.Now is going on. So, go way from me.Its Mohammad Akramul Islam.Now is going on. So, go way from me. 
+         </div>
+       
+     </div>
+     </div>
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">proggress bar</p></div>
+     <div class="p-3">
+    <div class="progress mt-2">
+       <div class="progress-bar " style="width:30%">HTML </div>
+     </div>
+     
+     <div class="progress mt-2">
+       <div class=" progress-bar progress-bar-striped" style="width:50%">CSS</div>
+     </div>
+     <div class="progress mt-2">
+       <div class="progress-bar progess-bar-striped progress-bar-animated " style="width:35%">
+         JavaScript
+       </div>
+     </div>
+     </div>
+   
+
+     <!--proggress too-->
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">Navigation</p></div>
+     <ul class="nav">
+       <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+       <li class="nav-item"><a class="nav-link" href="#">tutorial</a></li>
+       <li class="nav-item"><a class="nav-link" href="#">about me</a></li>
+     </ul>
+     <ul class="nav">
+       <li class="nav-item"><a class="nav-link" href="#">nav-item</a></li>
+       <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+       <li class="nav-item"><a class="nav-link" href="#">navigation</a></li>
+       
+     </ul>
+     
+     
+     <div class="title"><p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">collapse</p></div>
+   <div class="collapseble link">
+     
+     Its Mohammad Akramul Islam. Now i my examination is going on.<a class=" " href="#simplee" data-toggle="collapse">read more</a>
+     <p id="simplee"class="collapse">Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. </p>
+     
+     <p>Its Mohammad Akramul Islam. Now i my examination is going on. <a class="" href="#atai" data-toggle="collapse">read more</a></p>
+     <p id="atai" class="card collapse p-2">
+       Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. 
+     </p>
+     
+     <div class="">
+       Its Mohammad Akramul Islam. Now i my examination is going on. <a class="" href="#colla" data-toggle="collapse">see more</a>
+     </div>
+     <p id="colla" class="collapse">Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. </p>
+   </div>
+  
+  <div class="title">
+ <p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">Pagination</p>
+        </div>
+   <div class="page-item-ak bg-success p-2">
+     <ul class="pagination justify-content-center">
+       <li class="page-item rounded-left"><a class="page-link bg-warning text-white" href="#">pre</a></li>
+       <li class="page-item"><a class="page-link bg-warning text-white" href="#">1</a></li>
+       <li class="page-item"><a class="page-link bg-warning text-white" href="#">2</a></li>
+       <li class="page-item"><a class="page-link bg-warning text-white" href="#">3</a></li>
+       <li class="page-item"><a class="page-link bg-warning text-white" href="#">4</a></li>
+       <li class="page-item"><a class="page-link bg-warning text-white" href="#">5</a></li>
+       <li class="page-item"><a class="page-link bg-warning text-white" href="#">5</a></li>
+       <li class="page-item rounded-right"><a class="page-link bg-warning text-white" href="#">next</a></li>
+     </ul>
+   </div>
+      
+  <div class="list-type-now">
+    <div class="title">
+    <p class="text-uppercase text-bold text-center bg-primary text-white p-2 m-3 ">list</p>
+        </div>
+        <p class="text-center ">list with color</p>
+        <ul class="list-group">
+          <li class="list-group-item-primary">Baba</li>
+          <li class="list-group-item-info">abba</li>
+          <li class="list-group-item-danger">pita</li>
+     <p class="text-center ">list with hover</p>
+        </ul>
+        <ul class="list-group">
+          <li class="list-group-item-action">akram</li>
+          <li class="list-group-item-action">ekram</li>
+          <li class="list-group-item-action">islam</li>
+      <p class="text-center ">normal</p>
+        </ul>
+        <ul class="list-group">
+          <li class="list-group-item">Home</li>
+          <li class="list-group-item">address</li>
+          <li class="list-group-item">Tutorial</li>
+        </ul>
+        
+      </div>
+      
+      <div class="button p-3">
+        <div class="title">
+          <p class="text-uppercase text-bold text-center bg-primary text-white p-3 m-3 ">Button</p>
+        </div>
+        <input class="btn btn-outline-danger " type="submit" name="" id="" value="submit" />
+        <a class="btn" href="#">send</a>
+        <button class="btn btn-success btn-lg" type="submit">submit</button>
+        
+        <button class="btn btn-outline-primary btn-lg b-none" type="send">send</button>
+      </div>
+      
+      <div class="custom">
+       <div class="title">
+          <p class="text-uppercase text-bold text-center bg-primary text-white p-3 m-3 ">Blockquote</p>
+        </div>
+        <div class="blockquote">
+          <p>Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam.</p>
+          <div class="blockquote-footer">
+            Mohammad Akramul Islam <cite>Facebook.</cite>
+          </div>
+        </div>
+        
+        <blockquote class="blockquote">
+          <p>
+            Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam.
+          </p>
+          <div class="blockquote-footer">
+             Jannat Ekram <cite>Read in class 16</cite>
+          </div>
+        </blockquote>
+      
+        <blockquote class="blockquote">
+         <p>Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam.</p>
+          <div class="blockquote-footer">
+            Mohammad Akramul Islam <cite>Work is Ctg</cite>
+          </div>
+        </blockquote>
+      </div>
+      
+      
+    <div class="title">
+        </div>
+     <p class="text-uppercase text-bold text-center bg-primary text-white p-3 m-3 ">Alert dismissible</p>
+     
+     <div class="alert alert-primary alert-dismissiable ">
+       Its Mohammad Akramul Islam. Now i examination is going on. 
+       <button class="close" type="button" data-dismiss="alert">
+         <span>&times;</span>
+       </button>
+     </div>
+     
+      <div class="alert alert-warning data-dismissible">
+        examination is going on. Its Mohammad Akramul Islam. <a class="" href="#">see more</a>
+        <button class="close" data-dismiss="alert">&times;</button>
+      </div>
+      <div class="alert alert-danger data-dismissible">
+        <button class="close " data-dismiss="alert">&times;</button>
+        Mohammad akramulbislam dj 
+      </div>
+      <div class="alert alert-info data-dismissible">
+        Its my think.<a class="" href="#">you can do.</a>
+        <button class="close text-right bg-dark text-white " data-dismiss="alert">&times;</button>
+      </div>
+      
+     <div class="title">
+     <p class="text-uppercase text-bold text-center bg-primary text-white  p-3 m-3">Jumbotron</p>
+        </div>
+      <div class="jumbotron-fluid m-3">
+        <div class="card">
+          <div class="card-body">
+            Hello!
+          </div>
+        </div>
+      </div>
+      
+    <div class="title">
+     <p class="text-uppercase text-bold text-center bg-primary p-3 m-3 text-white  ">text & font</p>
+        </div>
+     <div class="text&font">
+       <h2 class="text-white text-weight-bolder bg-primary text-right text-uppercase font-sm-italic ">mohammad akramul islam</h2>
+       <p class="text-justify">
+         examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. No
+       </p>
+       <p class="w-30 text-justify bg-warning text-black text-capitalize p-3 font-weight- ">
+         Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. Its Mohammad Akramul Islam. Now i my examination is going on. 
+       </p>
+
+     </div>
+     <div class="title">
+      <p class=" p-3 m-3 text-uppercase text-bold text-center bg-primary text-white  ">image</p>
+        </div>
+      <div class="image">
+       <img class="m-auto d-block w-50 h-50 img-fluid rounded img-thumbnail w-20" src="img/1.jpg" alt="image" />
+       
+       <img class="m-auto  img-thumbnail m-3 bg-info rounded img-fluid " src="img/2.jpg" alt="pic" />
+      
+        
+      </div>
+
+      
+   <div class="title">
+      <p class="p-3 m-3 text-uppercase text-bold text-center bg-primary text-white  ">Border</p>
+        </div>
+    <div class="bg-primary text-light rounded d-inline-block border border-success ">
+   Its okey!
+    </div>
+     <p class=" bg-primary text-white  py-5 px-20 text-center border rounded border-danger my-5 mx-20">Its my theim. so you can go way from me. Its my theim. so you can go way from m Its my theim. so you can go way from m</p>
+     <div class="border border-warning rounded p-3 m-5">
+       border
+       border-danger/primary/success/info/light/dark/warning
+       rounded
+       rounded-circle
+       
+       
+       width="w"
+       height="h"
+      padding="p"
+      margin="m"
+      
+      
+       Akramul
+     </div>
+ </div>
+    
+    
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
